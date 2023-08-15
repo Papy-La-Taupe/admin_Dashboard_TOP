@@ -18,10 +18,39 @@
 
 #HeaderTopSide{
     grid-area: HeaderTopSide;
-    border:3px solid orange;
     display:grid;
+    align-items: center;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 6fr repeat(3,1fr);
+    grid-template-columns: 1fr 5fr repeat(3,1fr);
+}
+
+#SearchLogo{
+    height:4vh;
+    width:4vh;
+    padding:0.5vh;
+    justify-self: right;
+}
+
+#SearchBar{
+    background-color: lightgrey;
+    border: 2px black;
+    border-radius: 20px;
+    height:3vh;
+}
+
+#BellLogo{
+    height:4vh;
+    width:4vh;
+    padding:0.5;
+    justify-self: right;
+}
+
+#UserLogo{
+    height:5vh;
+    width:5vh;
+    padding:0.5;
+    border-radius: 30px;
+    justify-self: center;
 }
 
 #HeaderBottomSide{
@@ -41,6 +70,7 @@
 
 #MainLogoBox{
     margin-bottom:5vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -65,7 +95,7 @@
 #Logo{
     height:4vh;
     width:4vh;
-    padding: 1vh;
+    padding: 0.5vh;
 }
 
 .Communities{
