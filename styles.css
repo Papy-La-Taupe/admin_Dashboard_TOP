@@ -20,6 +20,9 @@
 #HeaderTopSide{
     grid-area: HeaderTopSide;
     border:3px solid orange;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 6fr repeat(3,1fr);
 }
 
 #HeaderBottomSide{
@@ -30,6 +33,22 @@
 #Sidebar{
     grid-area: Sidebar;
     border:3px solid green;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(autofit, 1fr);
+    gap:15px;
+}
+
+#MainLogoBox{
+    margin-bottom:5vh;
+}
+
+#Communities{
+    margin-bottom: 5vh;
+}
+
+#Privacy{
+    margin-bottom: 40vh;
 }
 
 #CentralDisplay{
