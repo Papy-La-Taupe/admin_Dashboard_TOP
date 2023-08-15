@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+#BackgroundGrid{
+    display: grid;
+    grid-template: repeat(2, 1fr) repeat(2, 4.5fr) / 1fr 2.75fr 1.25fr;
+    grid-template-areas:
+      "Sidebar HeaderTopSide HeaderTopSide"
+      "Sidebar HeaderBottomSide HeaderBottomSide"
+      "Sidebar CentralDisplay LeftSideTop"
+      "Sidebar CentralDisplay LeftSideBottom";
+    border:3px solid purple;
+    width:100vw;
+    height:100vh;
+}
+
+#HeaderTopSide{
+    grid-area: HeaderTopSide;
+    border:3px solid orange;
+}
+
+#HeaderBottomSide{
+    grid-area: HeaderBottomSide;
+    border:3px solid cyan;
+}
+
+#Sidebar{
+    grid-area: Sidebar;
+    border:3px solid green;
+}
+
+#CentralDisplay{
+    grid-area: CentralDisplay;
+    border:3px solid yellow;
+}
+
+#LeftSideTop{
+    grid-area: LeftSideTop;
+    border: 3px solid red;
+}
+
+#LeftSideBottom{
+    grid-area: LeftSideBottom;
+    border: 3px solid blue;
+}
